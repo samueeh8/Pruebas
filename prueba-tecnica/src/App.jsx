@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-<<<<<<< HEAD
 
 // const cat_image_url = `https://cataas.com/cat/says/${firstThreeWords}?fontSize=50&fontColor=red&json=true`;
 const cat_fact = "https://catfact.ninja/fact";
@@ -43,25 +42,3 @@ export default function App() {
     </main>
   );
 }
-=======
-import "./App.css";
-
-function App() {
-  const [fact, setFact] = useState("cat fact");
-
-  useEffect(() => {
-    fetch("https://catfact.ninja/fact")
-      .then((res) => res.json())
-      .then((data) => setFact(data.fact));
-  }, []);
-
-  return (
-    <>
-      <h1>App de Gatitos</h1>
-      <p>{fact}</p>
-    </>
-  );
-}
-
-export default App;
->>>>>>> 7a408d76e308ce53a78d36066f5983bdbf8bcc6f
